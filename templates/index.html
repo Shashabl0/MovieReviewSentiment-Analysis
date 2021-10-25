@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/static/micon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sentiment Analysis</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <nav class="nav">
+                <a href="/" class="nav-logo">
+                    <img src="/static/logo.png" width="50" height="50" alt="logo">
+                </a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/">Home</a>
+                        <a href="/about">About</a>
+                        <a href="https://github.com/Shashabl0/MovieReviewSentimentAnalysis" target="__blank">GitHub</a>
+                    </li>
+            </nav>
+        </header>
+        <div class="main-content" id="mcontent">
+            {% if html_file != "" %}
+                {% include html_file %}
+            {% endif %}
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='styles/main.js')}}"></script>
+</body>
+</html>

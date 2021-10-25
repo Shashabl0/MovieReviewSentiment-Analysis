@@ -1,0 +1,223 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* position: relative; */
+}
+body {
+  font-family: "merriweather";
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+}
+
+a {
+  outline: none;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+
+.main-header {
+  display: block;
+  padding: 20px 0;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+  text-decoration: none;
+  z-index: 100;
+  position: fixed;
+}
+
+.nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: right;
+}
+.nav-logo {
+  float: left;
+  margin-top: -11px;
+  transition: transform 150ms ease-out;
+}
+
+.nav-logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-logo img {
+  display: block;
+  max-width: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.nav-menu {
+  margin: 5px;
+  padding: 0;
+  font-size: 18px;
+  list-style: none;
+}
+.nav-menu li {
+  display: inline-block;
+  margin: 5px 0 0 15px;
+}
+
+.nav-menu li:first-child {
+  margin-left: 0;
+}
+
+.nav-menu a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #111;
+}
+
+.nav-menu a:hover {
+  color: rgb(86, 85, 85);
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: flex-start;
+  width: 100%;
+  position: fixed;
+  /* background-color: rgb(245, 227, 227); */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+}
+
+.grp {
+  width: 700px;
+  padding: 10px;
+  margin-top: 7rem;
+  height: 80vh;
+}
+
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-group textarea {
+  resize: none;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.input-group-add {
+  width: 45px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  background-color: #eceeef;
+  border-radius: 0.25rem;
+}
+.icon-al {
+  position: relative;
+  display: inline-block;
+  line-height: 40px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 16px;
+  font-family: merriweather;
+  line-height: 1.25;
+  color: #000000;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+}
+
+.btn-btn {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+
+.btn:focus,
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:focus,
+.btn.focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25);
+  box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+  box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+}

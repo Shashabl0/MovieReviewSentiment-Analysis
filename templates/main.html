@@ -1,0 +1,29 @@
+<div class="container" id="container">
+  <div class="grp">
+    <form action="/submit" method="POST">
+      <div class="input-group">
+        <div class="input-group-add material-icons material-icons-outlined">
+          <i class="icon-al" style="line-height: 40px">mode_edit</i>
+        </div>
+        <textarea class="form-control" name="review" rows="14" placeholder="write a review here">
+{{msg.review}}</textarea>
+      </div>
+      <div class="btn-btn">
+        <button type="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </div>
+    </form>
+    {% if msg.flag != 3 %}
+    <div class="result" style="text-align: center">
+      {% if msg.flag == 0 %}
+      <span id="0" name="negative"> Review is Negative</span>
+      {% elif msg.flag == 1 %}
+      <span id="1" name="positive"> Review is Positive</span>
+      {% elif msg.flag == 2 %}
+      <span id="2" name="more">Write Review (length > 10) to get prediction</span>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>
